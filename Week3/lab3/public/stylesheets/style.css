@@ -18,7 +18,7 @@ td {
 
 td span {
   position: relative;
-  z-index: 1; /* Устанавливаем z-index для текста, чтобы он оказался поверх цвета */
+  z-index: 1; 
 }
 
 .still, .rotate, .shrink {
