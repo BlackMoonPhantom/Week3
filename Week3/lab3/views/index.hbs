@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lab 3</title>
+    <!-- Add your CSS link here -->
+    <link rel="stylesheet" href="/stylesheets/style.css">
+  </head>
+  <body>
+    <h1>Color Grid Generator</h1>
+    <form action="/generate" method="post">
+      <label for="gridSize">Select a number:</label>
+      <select name="gridSize" id="gridSize">
+        {{#each options}}
+          <option value="{{this.value}}">{{this.text}}</option>
+        {{/each}}
+      </select>
+      <button type="submit">Generate Grid</button>
+    </form>
+
+    <!-- Display the generated table here -->
+    {{#if grid}}
+      {{{grid}}}
+    {{/if}}
+  </body>
+</html>
